@@ -11,7 +11,9 @@
 
     Sub Display()
         ' MsgBox("Go")
-        DisplayLabel.Text = FirstNameTextBox.Text & vbNewLine & LastNameTextBox.Text & vbNewLine & EmailTextBox.Text
+        DisplayLabel.Text = FirstNameTextBox.Text _
+                & vbNewLine & LastNameTextBox.Text _
+                & vbNewLine & EmailTextBox.Text
 
 
         If EmailTextBox.Text = "" Then
@@ -24,7 +26,9 @@
 
     Sub CreateEmail()
 
-        EmailTextBox.Text = FirstNameTextBox.Text & "." & LastNameTextBox.Text & "@gmail.com"
+        EmailTextBox.Text = FirstNameTextBox.Text _
+            & "." & LastNameTextBox.Text _
+            & "@gmail.com"
 
 
 
